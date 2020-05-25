@@ -34,13 +34,16 @@ book = {
               'meal': 'lunch ', 'prep_time': '15'},
 }
 
+
 def add_recip():
     name = input("Enter name of recip please.\n")
-    ingredients = input("Enter list of ingredients separated with ',' please.\n")
+    ingredients = input(
+        "Enter list of ingredients separated with ',' please.\n")
     ingredients = ingredients.split(",")
     meal = input("Enter the type of meal please.\n")
     time = input("Enter time for doing this recip please.\n")
-    book[name] = {'ingredients': ingredients,  'meal': meal, 'prep_time': time}
+    book[name] = {'ingredients': ingredients, 'meal': meal, 'prep_time': time}
+
 
 def delete_recip():
     erase = input("Please enter the recipe's name you want delet\n").lower()
@@ -67,6 +70,7 @@ def print_book():
     print("This is my beautiful cook book:")
     for r in book:
         print_recipe(r)
+
 
 while 1:
     menu()
