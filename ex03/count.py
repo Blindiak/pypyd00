@@ -1,4 +1,4 @@
-import sys
+import string
 
 
 def text_analyzer(*arg):
@@ -29,8 +29,8 @@ def text_analyzer(*arg):
             nb_u_l += 1
         elif c == ' ':
             nb_space += 1
-        elif not(c.isnumeric()):
-            nb_p_m += 1
+        elif c in string.punctuation:
+                nb_p_m += 1
 
     print(str(nb_u_l) + " upper letters\n")
 
