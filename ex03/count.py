@@ -30,7 +30,7 @@ def text_analyzer(*arg):
         elif c == ' ':
             nb_space += 1
         elif c in string.punctuation:
-                nb_p_m += 1
+            nb_p_m += 1
 
     print(str(nb_u_l) + " upper letters\n")
 
